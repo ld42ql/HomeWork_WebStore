@@ -1,0 +1,11 @@
+﻿@model RegisterUserViewModel
+@{
+    ViewData["Title"] = "Регистрация";
+    Layout = "_LayoutHeaderFooter";
+}
+<section id="form">
+    <!--form-->
+    <div class="row">
+        @await Html.PartialAsync("Partial/_Register", Model)
+    </div>
+</section>

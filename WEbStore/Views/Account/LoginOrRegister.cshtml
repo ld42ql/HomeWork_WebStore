@@ -1,0 +1,17 @@
+﻿@model Tuple<LoginViewModel, RegisterUserViewModel>
+@{
+    ViewData["Title"] = "Account";
+    Layout = "_LayoutHeaderFooter";
+}
+<section id="form">
+    <!--form-->
+    <div class="container">
+        <div class="row">
+            @await Html.PartialAsync("Partial/_Login", Model.Item1)
+            <div class="col-sm-1">
+                <h2 class="or">OR</h2>
+            </div>
+            @await Html.PartialAsync("Partial/_Register", Model.Item2)
+        </div>
+    </div>
+</section><!--/form-->

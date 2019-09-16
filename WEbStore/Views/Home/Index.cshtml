@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "_LayoutLeftBar";
+}
+@model CatalogViewModel
+
+@section top{
+    @await Html.PartialAsync("Partial/_Slider")
+}
+
+
+@await Html.PartialAsync("Partial/_FeaturedItems", Model.Products)
+
+@await Html.PartialAsync("Partial/_CategoryTab")
+
+@await Html.PartialAsync("Partial/_RecommendedItems")
+

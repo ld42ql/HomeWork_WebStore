@@ -1,0 +1,13 @@
+﻿@{ 
+    ViewBag.Title = "Blog";
+    Layout = "_LayoutLeftBar";
+    }
+
+
+ <div class="blog-post-area">
+     <h2 class="title text-center">Latest From our Blog</h2>
+        @await Html.PartialAsync("Partial/_BlogPost")
+         
+        @await Html.PartialAsync("Partial/_PaginationArea")
+</div>
+ 

@@ -1,0 +1,11 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "_LayoutHeaderFooter";
+}
+<section id="form">
+    <!--form-->
+    <div class="row">
+        @await Html.PartialAsync("Partial/_Login", Model)
+    </div>
+</section><!--/form-->

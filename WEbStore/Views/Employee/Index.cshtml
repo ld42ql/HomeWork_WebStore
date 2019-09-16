@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Таблица с работниками";
+    Layout = "_LayoutHeaderFooter";
+}
+
+<div class="container">
+    <div class="bg">
+        <div class="container">
+            @await Html.PartialAsync("_BreadCrumb")
+        </div>
+        <div class="features_items">
+            <h2 class="title text-center">@ViewData["Title"]</h2>
+            @await Html.PartialAsync("Partial/_TableEmployee")
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@RenderSection("styles", false)
+
+
+@await Html.PartialAsync("_Header")
+
+@RenderSection("top", false)
+
+@RenderBody()
+
+@await Html.PartialAsync("_Footer")
+
+
+
+@RenderSection("scripts", false)
+

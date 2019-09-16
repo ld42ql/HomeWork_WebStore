@@ -1,0 +1,23 @@
+﻿@model CatalogViewModel
+@{
+    ViewBag.Title = "Shop";
+    Layout = "_LayoutLeftBar";
+}
+
+@section top{
+<section id="advertisement">
+    <div class="container">
+        <img src="~/images/shop/advertisement.jpg" alt="" />
+    </div>
+</section>
+}
+
+@await Html.PartialAsync("Partial/_FeaturedItems", Model.Products)
+
+
+<ul class="pagination">
+    <li class="active"><a href="">1</a></li>
+    <li><a href="">2</a></li>
+    <li><a href="">3</a></li>
+    <li><a href="">&raquo;</a></li>
+</ul>

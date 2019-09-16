@@ -1,0 +1,13 @@
+﻿@model CartViewModel
+@{
+    ViewBag.Title = "Cart";
+    Layout = "_LayoutHeaderFooter";
+}
+<section id="cart_items">
+    <div class="container">
+        @await Html.PartialAsync("_BreadCrumb")
+        @await Html.PartialAsync("Partial/_CartItems", Model)
+    </div>
+</section> <!--/#cart_items-->
+
+@await Html.PartialAsync("Partial/_DoAction")

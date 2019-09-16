@@ -1,0 +1,11 @@
+﻿@model ProductViewModel
+@{
+    ViewData["Title"] = "Товар:" + Model.Name;
+    Layout = "_LayoutLeftBar";
+}
+
+@await Html.PartialAsync("Partial/_ProductDetalis", Model)
+
+@await Html.PartialAsync("Partial/_CategoryTab")
+
+@await Html.PartialAsync("Partial/_RecommendedItems")

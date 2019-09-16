@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Детали";
+    Layout = "_LayoutHeaderFooter";
+}
+
+<div class="container">
+    <div class="bg">
+        <div class="container">
+            @await Html.PartialAsync("_BreadCrumb")
+        </div>
+        <div class="row">
+            @await Html.PartialAsync("Partial/_TableEmployeeDetalis")
+        </div>
+    </div>
+</div>
