@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using WebStore.Dal.Context;
 using WebStore.Domain.Entities;
-using WebStore.Domain.Filters;
+using WebStore.Domain.Models.Filters;
 using WebStore.Interfaces;
 
 namespace WebStore.Implementation.SQL

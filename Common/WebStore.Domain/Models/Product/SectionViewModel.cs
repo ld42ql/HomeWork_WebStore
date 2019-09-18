@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
 
-namespace WebStore.Domain.Product
+namespace WebStore.Domain.Models.Product
 {
     /// <summary>
     /// Представления секций

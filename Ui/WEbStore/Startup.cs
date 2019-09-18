@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using WebStore.Domain;
+using WebStore.Domain.Models;
 using WebStore.Dal.Context;
 using WebStore.Domain.Entities;
 using WebStore.Interfaces;

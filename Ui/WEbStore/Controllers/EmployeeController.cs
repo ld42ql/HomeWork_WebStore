@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
-using WebStore.Domain;
+using WebStore.Domain.Models;
 using WebStore.Interfaces;
 
 namespace WebStore.Controllers

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using WebStore.Domain.Filters;
-using WebStore.Domain.Catalogs;
+using WebStore.Domain.Models.Filters;
+using WebStore.Domain.Models.Catalogs;
 using WebStore.Interfaces;
 
 namespace WebStore.Controllers

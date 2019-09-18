@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using WebStore.Domain.Brand;
+using WebStore.Domain.Models.Brand;
 using WebStore.Interfaces;
 using WebStore.ViewComponents.BaseClass;
 

@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using WebStore.Domain.Cart;
-using WebStore.Domain.Catalogs;
-using WebStore.Domain.Filters;
+using WebStore.Domain.Models.Cart;
+using WebStore.Domain.Models.Catalogs;
+using WebStore.Domain.Models.Filters;
 using WebStore.Interfaces;
 
 namespace WebStore.Implementation.Cart
@@ -79,7 +77,7 @@ namespace WebStore.Implementation.Cart
         /// </summary>
         public void RemoveAll()
         {
-            cartStore.Cart = new Domain.Cart.Cart { Items = new List<CartItem>() };
+            cartStore.Cart = new Domain.Models.Cart.Cart { Items = new List<CartItem>() };
         }
 
        /// <summary>

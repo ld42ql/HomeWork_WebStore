@@ -1,9 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using WebStore.Domain.Account;
-using WebStore.Domain.Entities;
+﻿using Microsoft.AspNetCore.Mvc;
 using WebStore.Interfaces;
 
 namespace WebStore.Controllers

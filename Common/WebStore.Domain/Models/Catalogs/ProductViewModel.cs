@@ -1,6 +1,6 @@
 ﻿using WebStore.Domain.Entities.Base.Interfaces;
 
-namespace WebStore.Domain.Catalogs
+namespace WebStore.Domain.Models.Catalogs
 {
     public class ProductViewModel : INamedEntity, IOrderedEntity
     {

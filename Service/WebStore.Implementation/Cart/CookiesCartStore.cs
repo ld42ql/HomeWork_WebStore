@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
-using WebStore.Domain.Cart;
+using WebStore.Domain.Models.Cart;
 using WebStore.Interfaces;
 
 namespace WebStore.Implementation.Cart
@@ -20,17 +20,17 @@ namespace WebStore.Implementation.Cart
                 this.httpContextAccessor.HttpContext.User.Identity.Name : "");
         }
 
-        public Domain.Cart.Cart Cart
+        public Domain.Models.Cart.Cart Cart
         {
             get
             {
                 var cookie = httpContextAccessor.HttpContext.Request.Cookies[cartName];
                 string json;
-                Domain.Cart.Cart cart;
+                Domain.Models.Cart.Cart cart;
 
                 if (cookie == null)
                 {
-                    cart = new Domain.Cart.Cart { Items = new List<CartItem>() };
+                    cart = new Domain.Models.Cart.Cart { Items = new List<CartItem>() };
                     json = JsonConvert.SerializeObject(cart);
 
                     httpContextAccessor.HttpContext.Response.Cookies
@@ -42,7 +42,7 @@ namespace WebStore.Implementation.Cart
                 }
 
                 json = cookie;
-                cart = JsonConvert.DeserializeObject<Domain.Cart.Cart>(json);
+                cart = JsonConvert.DeserializeObject<Domain.Models.Cart.Cart>(json);
 
                 httpContextAccessor.HttpContext.Response.Cookies.Delete(cartName);
 

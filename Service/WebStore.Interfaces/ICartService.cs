@@ -1,4 +1,4 @@
-﻿using WebStore.Domain.Cart;
+﻿using WebStore.Domain.Models.Cart;
 
 namespace WebStore.Interfaces
 {

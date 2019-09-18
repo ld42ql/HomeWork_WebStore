@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using WebStore.Domain.Account;
+using WebStore.Domain.Models.Account;
 using WebStore.Domain.Entities;
 
 

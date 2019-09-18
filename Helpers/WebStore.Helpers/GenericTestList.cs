@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using WebStore.Domain;
+using WebStore.Domain.Models;
 
 namespace WebStore.Helpers
 {

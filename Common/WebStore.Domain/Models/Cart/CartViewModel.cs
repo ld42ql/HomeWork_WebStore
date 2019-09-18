@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using WebStore.Domain.Catalogs;
+using WebStore.Domain.Models.Catalogs;
 
-namespace WebStore.Domain.Cart
+namespace WebStore.Domain.Models.Cart
 {
     public class CartViewModel
     {

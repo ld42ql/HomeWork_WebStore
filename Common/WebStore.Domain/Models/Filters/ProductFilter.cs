@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WebStore.Domain.Filters
+namespace WebStore.Domain.Models.Filters
 {
     /// <summary>
     /// Класс для фильтрации товаров
