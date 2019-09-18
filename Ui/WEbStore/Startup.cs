@@ -12,6 +12,8 @@ using WebStore.Interfaces;
 using WebStore.Implementation.InMemory;
 using WebStore.Implementation.SQL;
 using WebStore.Implementation.Cart;
+using WebStore.Interfaces.Api;
+using WebStore.Clients.Values;
 
 namespace WebStore
 {
@@ -51,6 +53,12 @@ namespace WebStore
 
             services.AddDbContext<WebStoreContext>(options => options.UseSqlServer(
                 Configuration.GetConnectionString("DefaultConnection")));
+
+            #region testApiClient
+
+            services.AddTransient<IValuesService, ValuesClient>();
+
+            #endregion
 
             #region Identity
 

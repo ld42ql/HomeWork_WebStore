@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebStore.Sevice", "Service\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebStore.Interfaces", "Service\WebStore.Interfaces\WebStore.Interfaces.csproj", "{A8B31F4D-9E07-48EB-9277-7233D28DC130}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebStore.Clients", "Service\WebStore.Clients\WebStore.Clients.csproj", "{85828693-7BCA-407A-A716-62295708A2EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebStore.Clients", "Service\WebStore.Clients\WebStore.Clients.csproj", "{85828693-7BCA-407A-A716-62295708A2EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
