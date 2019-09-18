@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using WebStore.Domain;
 
-namespace WebStore.TestProject
+namespace WebStore.Helpers
 {
     public class GenericTestList
     {
